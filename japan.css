@@ -1,3 +1,4 @@
+
 h1 {
     position: relative;
     color: #158b2b;
@@ -25,8 +26,45 @@ h1 {
     width: 200%;
     height: 300%;
 }
+
+header {
+    height: 100px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 36px;
+    font-weight: 600;
+}
+
 .active {
-    fill: red; /* 任意の色に変更 */
+    fill: red;
+}
+
+.inactive {
+    fill: white;
+}
+
+.todouhuken {
+    stroke: black;
+    stroke-width: 1;
+}
+
+.play-ground {
+    background-color: rgb(148, 220, 220);
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    width: 80%;
+    height: 650px;
+    float: left;
 }
 
 @import "https://use.fontawesome.com/releases/v5.13.0/css/all.css";
@@ -232,9 +270,3 @@ a.btn--circle:hover {
   -webkit-box-shadow: 0 3px 0 #e53b4e;
   box-shadow: 0 3px 0 #e53b4e;
 }
-
-
-
-/* #map-container svg{
-    width: 50%;
-} */

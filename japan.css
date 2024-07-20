@@ -2,7 +2,7 @@ header{
     background-color: red;
 }
 
-.active {
+path.active {
     fill: red; /* 任意の色に変更 */
 }
 .help{

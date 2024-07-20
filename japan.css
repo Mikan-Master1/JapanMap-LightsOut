@@ -5,7 +5,6 @@ header{
 .active {
     fill: red; /* 任意の色に変更 */
 }
-
 .help{
     color: green;
 }

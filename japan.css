@@ -1,20 +1,95 @@
-header{
-    background-color: red;
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
 }
 
-path.active {
-    fill: red; /* 任意の色に変更 */
-}
-.help{
-    color: green;
+header {
+    height: 100px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.todouhuken{
+header h1 {
+    margin: 0;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.active {
+    fill: red;
+}
+
+.inactive {
     fill: white;
-    stroke: black;
-    stroke-width: 2;
 }
 
-.map-container{
-    background-color: blueviolet;
+.todouhuken {
+    stroke: black;
+    stroke-width: 1;
+}
+
+.play-ground {
+    background-color: rgb(148, 220, 220);
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    width: 80%;
+    height: 650px;
+    float: left;
+}
+
+.Button {
+    width: 20%;
+    height: 650px;
+    float: left;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-container {
+    margin: 10px 300px;
+}
+
+.sub-main {
+    height: calc(100% - 100px);
+    display: flex;
+}
+
+a.btn--circle {
+    border-radius: 50%;
+    line-height: 150px; /* Increased from 100px to 150px */
+    width: 150px; /* Increased from 100px to 150px */
+    height: 150px; /* Increased from 100px to 150px */
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: yellow;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 0 5px 0 #e6d900;
+}
+
+a.btn--circle:hover {
+    transform: translate(0, 3px);
+    box-shadow: 0 2px 0 #e6d900;
+}
+
+footer{
+    background-color: #feb47b;
 }

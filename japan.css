@@ -1,3 +1,8 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
 header{
     background-color: red;
 }
@@ -5,16 +10,18 @@ header{
 path.active {
     fill: red; /* 任意の色に変更 */
 }
-.help{
-    color: green;
-}
+
 
 .todouhuken{
     fill: white;
     stroke: black;
     stroke-width: 2;
 }
-
-.map-container{
-    background-color: blueviolet;
+.play-ground{
+    background-image: url('picture_file/ab.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.Button{
+    background-color: aqua;
 }

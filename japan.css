@@ -1,11 +1,21 @@
-#map-container {
-    width: 200%;
-    height: 300%;
+header{
+    background-color: red;
 }
+
 .active {
     fill: red; /* 任意の色に変更 */
 }
 
-/* #map-container svg{
-    width: 50%;
-} */
+.help{
+    color: green;
+}
+
+.todouhuken{
+    fill: white;
+    stroke: black;
+    stroke-width: 2;
+}
+
+.map-container{
+    background-color: blueviolet;
+}

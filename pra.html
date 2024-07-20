@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>日本地図でライツアウト</title>
+    <link rel="stylesheet" type="text/css" href="japan.css">
     <style>
         svg {
             width: 100%;
@@ -225,7 +226,7 @@
         // 隣接行列の作成（例）
         const adjacencyMatrix = [
             // [none, 北海道, 青森, 岩手, ..., 沖縄]
-            [0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], // 北海道
+            [1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
         ];
 
 
@@ -247,7 +248,6 @@
 
         function toggleLight(index) {
             // 自分自身の状態を反転
-            lightStates[index] = 1 - lightStates[index];
 
             // 隣接する都道府県の状態を反転
             for (let i = 0; i < prefectures.length; i++) {

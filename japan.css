@@ -1,0 +1,7 @@
+#map-container {
+    width: 200%;
+    height: 300%;
+}
+.active {
+    fill: red; /* 任意の色に変更 */
+}

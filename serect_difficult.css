@@ -16,6 +16,10 @@ section {
     font-size: 48px;
 }
 
+.txt1 {
+    font-family:'YuMincho';
+}
+
 .container{
     display: flex;
     flex-direction: row;
@@ -111,11 +115,13 @@ a.btn-rounded:hover {
 }
 
 a.btn-rounded:hover i {
-  bottom: 6px;
+  bottom: 5px;
 }
 
 .fa-position-bottom {
   position: absolute;
   bottom: 1rem;
-  left: calc(50% - 0.5rem);
+  left: calc(20% - 0.5rem);
+  color: #212529;
+
 }

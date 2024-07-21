@@ -9,7 +9,7 @@
 <body>
     <header>
         <h1>日本地図でライツアウト</h1>
-        <div id="timer">残り時間: <span id="countdown">30</span>秒</div>
+        <div id="timer">残り時間: <span id="countdown">420</span>秒</div>
     </header>
     <main>
         <div class="sub-main">
@@ -292,7 +292,7 @@
     
         // タイマーIDとカウントダウン変数を保持する変数
         let timerId = null;
-        let countdown = 30;
+        let countdown = 420;
         let gameStarted = false; // ゲームが開始されたかどうかを示すフラグ
     
         // クリック時の処理
@@ -365,7 +365,7 @@
         // ゲームを開始する関数
         function startGame() {
             randomizeLights();
-            countdown = 30; // カウントダウンの初期値を設定
+            countdown = 420; // カウントダウンの初期値を設定
             document.getElementById("countdown").textContent = countdown;
             startTimer();
             gameStarted = true; // ゲーム開始フラグを立てる
@@ -376,7 +376,7 @@
             lightStates.fill(0);
             updateMap();
             stopTimer();
-            countdown = 30;
+            countdown = 420;
             document.getElementById("countdown").textContent = countdown;
             gameStarted = false; // ゲーム開始フラグをリセット
         }
